@@ -1,0 +1,137 @@
+//nav top 
+.navtop{
+    background-color: $color-beige;
+    .navtop__entry{
+        margin-left: auto;
+    }
+    .container{
+        display:flex;
+        justify-content: space-between;
+    }
+    button{
+        padding: 18px;
+        border: 0.5px solid #e1e1e1;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: $color-yellow;
+    }
+}
+
+//nav middle
+.navmiddle {
+    background-color: $color-white;
+    .wrapper{
+        display:flex;
+        justify-content: space-between;
+    }
+    .navmiddle__logo{
+        flex-grow: 1;
+    }
+    .navmiddle__phone{
+        display: flex;
+        flex-grow: 4;
+        .navmiddle__phone--hotline{
+            flex:0 0 30%;
+            h6{
+                color: $color-yellow;
+                text-align: center;
+                margin: 40px 7px 5px;
+            }
+            p{
+                margin-left: 103px;
+                color: $color-phone;
+                font-size:$font-size-phone;
+            }
+        }
+        .navmiddle__phone--ship{
+            flex:0 0 30%;
+            h6{
+                margin: 40px 5px 5px -1px;
+                color: $color-yellow;
+                text-align: center; 
+            }
+            p {
+                font-size: $font-size-phone;
+                color: $color-phone;
+                margin-left: 58px;
+            }
+        }
+        .navmiddle__phone--search{
+            position: relative;
+            flex:0 0 40%;
+            display: inline-block;
+            input[type="search"] {       
+                padding: 13px 102px 13px 8px;
+                border: 1px solid lightgray;
+                border-radius: 23px;
+                margin: 37px 10px 32px 95px;
+                font-size: 13px;
+            }
+            input[type="search"]::placeholder {         
+                color: $color-phone;
+                text-align: left;
+            }
+            span{
+                position: absolute;
+                top: 53px;
+                right: 21px;
+                color: #acacac;
+            }
+        }
+    }
+}
+
+//Menu bar
+.menu {
+    background-color: $color-black;
+    .container{
+        display:flex;
+        justify-content: space-between;
+    }
+    button {
+        padding: 30px;
+        border: 1px solid #363636;     
+        background-color: $color-black;
+        color: $color-white;
+        font-weight: 600;
+        font-size: 13px;
+        float: left;
+    }
+    .menu__cart{
+        margin-left: auto;
+        
+        .basket{
+            position: relative;
+            font-size: 18px;
+        }
+        .dot{
+            position: absolute;
+            top: -9px;
+            right: -11px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: $color-yellow;
+            font-size: 15px;
+            font-family: $font-primary;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+    button:hover {
+        border: 1px solid $color-yellow ;
+        background-color: $color-yellow;
+    }
+    .btn-group button:not(:last-child) {
+        border-right: none; 
+    }
+}
+
+
+
+
+
+
+
