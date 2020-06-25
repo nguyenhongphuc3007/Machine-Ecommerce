@@ -1,12 +1,12 @@
 //nav top 
 .navtop{
     background-color: $color-beige;
-    .navtop__entry{
-        margin-left: auto;
-    }
-    .container{
+    .wrapper{
         display:flex;
         justify-content: space-between;
+    }
+    .navtop__entry{
+        margin-left: auto;
     }
     button{
         padding: 18px;
@@ -86,7 +86,7 @@
 //Menu bar
 .menu {
     background-color: $color-black;
-    .container{
+    .wrapper{
         display:flex;
         justify-content: space-between;
     }

@@ -1,14 +1,14 @@
 .navtop {
   background-color: #f7f7f7; }
-  .navtop .navtop__entry {
-    margin-left: auto; }
-  .navtop .container {
+  .navtop .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .navtop .navtop__entry {
+    margin-left: auto; }
   .navtop button {
     padding: 18px;
     border: 0.5px solid #e1e1e1;
@@ -93,7 +93,7 @@
 
 .menu {
   background-color: #202020; }
-  .menu .container {
+  .menu .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

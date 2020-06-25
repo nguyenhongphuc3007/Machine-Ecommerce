@@ -3,15 +3,16 @@
 
 .navtop    
 	.container
-		.navtop__icon
-			.btn-group
-				for name in icon
-					button
-						i(class=name)
-		.navtop__entry
-			.btn-group
-				button ĐĂNG KÍ
-				button ĐĂNG NHẬP
+		.wrapper
+			.navtop__icon
+				.btn-group
+					for name in icon
+						button
+							i(class=name)
+			.navtop__entry
+				.btn-group
+					button ĐĂNG KÍ
+					button ĐĂNG NHẬP
 .navmiddle
 	.container
 		.wrapper
@@ -31,11 +32,12 @@
 				
 .menu
 	.container
-		.menu__bar
-			.btn-group
-			for name in menubar
-				button= name
-		.menu__cart
-			button
-				i.fa.fa-shopping-basket.basket
-					span.dot 0
+		.wrapper
+			.menu__bar
+				.btn-group
+				for name in menubar
+					button= name
+			.menu__cart
+				button
+					i.fa.fa-shopping-basket.basket
+						span.dot 0
