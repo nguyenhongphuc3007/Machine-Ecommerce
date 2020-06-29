@@ -7,7 +7,9 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .navtop__icon button {
     width: 55px;
     background-color: #f7f7f7; }
@@ -27,9 +29,9 @@
   .navtop button:hover {
     background-color: #f5bd10; }
 
-.navmiddle {
+.navcenter {
   background-color: #ffffff; }
-  .navmiddle .wrapper {
+  .navcenter .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -38,77 +40,77 @@
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .navmiddle__logo {
+  .navcenter__logo {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 15%; }
-  .navmiddle__phone {
+  .navcenter__phone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 4;
     -ms-flex-positive: 4;
     flex-grow: 4;
-    width: 85%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .navmiddle__phone--hotline {
+    width: 85%; }
+    .navcenter__phone--hotline {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
       flex: 0 0 30%;
       width: 30%; }
-      .navmiddle__phone--hotline h6 {
+      .navcenter__phone--hotline h6 {
         color: #f5bd10;
         text-align: center;
         margin: 40px 7px 5px; }
-      .navmiddle__phone--hotline p {
-        margin-left: 103px;
+      .navcenter__phone--hotline p {
+        margin-left: 108px;
         color: #b6b6b6;
         font-size: 12px; }
-    .navmiddle__phone--ship {
+    .navcenter__phone--ship {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
       flex: 0 0 30%;
       width: 30%; }
-      .navmiddle__phone--ship h6 {
+      .navcenter__phone--ship h6 {
         margin: 40px 5px 5px -1px;
         color: #f5bd10;
         text-align: center; }
-      .navmiddle__phone--ship p {
+      .navcenter__phone--ship p {
         font-size: 12px;
         color: #b6b6b6;
-        margin-left: 58px; }
-    .navmiddle__phone--search {
+        margin-left: 64px; }
+    .navcenter__phone--search {
       position: relative;
       -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
       flex: 0 0 40%;
-      width: 40%;
       display: inline-block; }
-      .navmiddle__phone--search input[type="search"] {
+      .navcenter__phone--search input[type="search"] {
+        position: absolute;
         padding: 13px 102px 13px 8px;
         border: 1px solid lightgray;
         border-radius: 23px;
         margin: 37px 10px 32px 95px;
         font-size: 13px;
-        outline: none; }
-      .navmiddle__phone--search input[type="search"]::-webkit-input-placeholder {
+        outline: none;
+        text-indent: 10px; }
+      .navcenter__phone--search input[type="search"]::-webkit-input-placeholder {
         color: #b6b6b6;
         text-align: left; }
-      .navmiddle__phone--search input[type="search"]::-moz-placeholder {
+      .navcenter__phone--search input[type="search"]::-moz-placeholder {
         color: #b6b6b6;
         text-align: left; }
-      .navmiddle__phone--search input[type="search"]::-ms-input-placeholder {
+      .navcenter__phone--search input[type="search"]::-ms-input-placeholder {
         color: #b6b6b6;
         text-align: left; }
-      .navmiddle__phone--search input[type="search"]::placeholder {
+      .navcenter__phone--search input[type="search"]::placeholder {
         color: #b6b6b6;
         text-align: left; }
-      .navmiddle__phone--search span {
+      .navcenter__phone--search span {
         position: absolute;
         top: 53px;
-        right: 21px;
+        right: 34px;
+        font-size: 18px;
         color: #acacac; }
 
 .menu {
@@ -119,7 +121,9 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .menu button {
     padding: 30px;
     border: 1px solid #363636;
@@ -135,15 +139,15 @@
       font-size: 18px; }
     .menu__cart .dot {
       position: absolute;
-      top: -9px;
+      top: -10px;
       right: -11px;
       height: 20px;
       width: 20px;
       border-radius: 50%;
       background-color: #f5bd10;
-      font-size: 15px;
+      font-size: 14px;
       font-family: "Roboto", sans-serif;
-      line-height: 19px;
+      line-height: 20px;
       text-align: center; }
   .menu button:hover {
     border: 1px solid #f5bd10;
