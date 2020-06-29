@@ -13,22 +13,22 @@
 				.btn-group
 					button ĐĂNG KÍ
 					button ĐĂNG NHẬP
-.navmiddle
+.navcenter
 	.container
 		.wrapper
-			.navmiddle__logo
+			.navcenter__logo
 				img(src="images/company.jpg", alt="")
-			.navmiddle__phone
-				.navmiddle__phone--hotline
-					h6  HOTLINE:
+			.navcenter__phone
+				.navcenter__phone--hotline
+					h6 HOTLINE:
 					p  (04) 9500 9650 - (04) 9500 9650
-				.navmiddle__phone--ship
+				.navcenter__phone--ship
 					h6  ĐẶT HÀNG NHANH:
 					p  (04) 9500 9650 - (04) 9500 9650
-				.navmiddle__phone--search
+				.navcenter__phone--search
 					form(action="")
-						span.i.fa.fa-search
 						input(type="search" placeholder="Tìm kiếm...")
+						span.i.fa.fa-search
 				
 .menu
 	.container
@@ -38,6 +38,6 @@
 				for name in menubar
 					button= name
 			.menu__cart
-				button
+				button.menu__cart--btn
 					i.fa.fa-shopping-basket.basket
 						span.dot 0

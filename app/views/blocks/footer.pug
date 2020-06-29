@@ -1,0 +1,29 @@
+- var policy = ["Chính sách giao hàng", "Chính sách đổi sản phẩm","Chính sách bảo hành","Chính sách trả góp","Giới thiệu hàng đổi trả","Vận chuyển miễn phí"]
+- var services = ["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","Tích điểm đổi thưởng","Dịch vụ đổi trả hàng","Câu hỏi thường gặp"]
+- var news = ["Tin tức mới nhất","Tin tức"]
+
+.footer
+	.links
+		.container
+			.wrapper
+				.links__about
+					h6 VỀ CHÚNG TÔI
+					.links__about--description
+						p Công ty Cổ phần công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực thương mại điện tử
+					.links__about--contact
+						p Tầng 4 - Tòa nhà Hanoi group 442 Đội Cấn Ba Đình - Hà Nội
+						p support@dkt.com.vn
+						p (84-4) 66558868 - (84-4) 37868904
+				.links__policy
+					h6 CHÍNH SÁCH
+					for name in policy
+						p= name
+				.links__services
+					h6 DỊCH VỤ & HỖ TRỢ
+					for name in services
+						p= name
+				.links__news
+					h6 TIN TỨC & SỰ KIỆN
+				.links__connect
+	.company
+	.copyright
