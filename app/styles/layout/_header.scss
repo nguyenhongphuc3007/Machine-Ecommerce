@@ -1,23 +1,33 @@
 //nav top 
 .navtop{
     background-color: $color-beige;
+    border: 1px solid $color-border;
     .wrapper{
         display:flex;
         justify-content: space-between;
     }
-    .navtop__icon{
+    &__icon{
         button{
-            width: 50px;
+            width: 55px;
+            background-color: $color-beige;
         }
     }
-    .navtop__entry{
+    &__entry{
         margin-left: auto;
+        button{
+            background-color: $color-beige;
+        }
     }
     button{
         padding: 18px;
-        border: 0.5px solid #e1e1e1;
+        border: 0.5px solid $color-border;
         font-size: 11px;
         font-weight: bold;
+        border-bottom: none;
+        border-top: none;
+    button:not(:last-child) {
+        border-right: none; 
+    }
     }
     button:hover {
         background-color: $color-yellow;
@@ -30,15 +40,20 @@
     .wrapper{
         display:flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .navmiddle__logo{
+    &__logo{
         flex-grow: 1;
+        width:15%;
     }
-    .navmiddle__phone{
+    &__phone{
         display: flex;
         flex-grow: 4;
-        .navmiddle__phone--hotline{
+        width: 85%;
+        flex-wrap: wrap;
+        &--hotline{
             flex:0 0 30%;
+            width: 30%;
             h6{
                 color: $color-yellow;
                 text-align: center;
@@ -50,8 +65,9 @@
                 font-size:$font-size-phone;
             }
         }
-        .navmiddle__phone--ship{
+        &--ship{
             flex:0 0 30%;
+            width: 30%;
             h6{
                 margin: 40px 5px 5px -1px;
                 color: $color-yellow;
@@ -63,9 +79,10 @@
                 margin-left: 58px;
             }
         }
-        .navmiddle__phone--search{
+        &--search{
             position: relative;
             flex:0 0 40%;
+            width: 40%;
             display: inline-block;
             input[type="search"] {       
                 padding: 13px 102px 13px 8px;
@@ -73,6 +90,7 @@
                 border-radius: 23px;
                 margin: 37px 10px 32px 95px;
                 font-size: 13px;
+                outline:none;
             }
             input[type="search"]::placeholder {         
                 color: $color-phone;
@@ -104,7 +122,7 @@
         font-size: 13px;
         float: left;
     }
-    .menu__cart{
+    &__cart{
         margin-left: auto;
         
         .basket{
