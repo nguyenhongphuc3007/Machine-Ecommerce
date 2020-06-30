@@ -1,29 +1,83 @@
 - var policy = ["Chính sách giao hàng", "Chính sách đổi sản phẩm","Chính sách bảo hành","Chính sách trả góp","Giới thiệu hàng đổi trả","Vận chuyển miễn phí"]
 - var services = ["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","Tích điểm đổi thưởng","Dịch vụ đổi trả hàng","Câu hỏi thường gặp"]
-- var news = ["Tin tức mới nhất","Tin tức"]
+- var news = ["Tin tức mới nhất","Tin tức khuyến mại","Tuyển dụng, đãi ngộ","Download tài liệu","Chương trình đối tác","Nhà phát triển ứng dụng"]
+- var connect = [{icon:"fa fa-facebook",name:"Facebook"},{icon:"fa fa-twitter",name:"Twitter"},{icon:"fa fa-google-plus",name:"Google"},{icon:"fa fa-skype",name:"Skype"},{icon:"fa fa-instagram",name:"Instagram"}]
+- var footermenu = ["Trang chủ","Giới thiệu","Sản phẩm","Tin khuyến mại","Dịch vụ","Liên hệ"]
 
 .footer
 	.links
 		.container
 			.wrapper
 				.links__about
+					i.fa.fa-th-large.headIcon
 					h6 VỀ CHÚNG TÔI
 					.links__about--description
 						p Công ty Cổ phần công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực thương mại điện tử
 					.links__about--contact
-						p Tầng 4 - Tòa nhà Hanoi group 442 Đội Cấn Ba Đình - Hà Nội
-						p support@dkt.com.vn
-						p (84-4) 66558868 - (84-4) 37868904
+						ul
+							li.location
+								i.fa.fa-map-marker
+								span Tầng 4 - Tòa nhà Hanoi group 
+									br
+									| 442 Đội Cấn Ba Đình - Hà Nội
+							li.email
+								i.fa.fa-envelope
+								span support@dkt.com.vn
+							li.phone
+								i.fa.fa-mobile
+								span (84-4) 66558868 - (84-4) 37868904
 				.links__policy
+					i.fa.fa-th-large.headIcon
 					h6 CHÍNH SÁCH
 					for name in policy
 						p= name
 				.links__services
+					i.fa.fa-th-large.headIcon
 					h6 DỊCH VỤ & HỖ TRỢ
 					for name in services
 						p= name
 				.links__news
+					i.fa.fa-th-large.headIcon
 					h6 TIN TỨC & SỰ KIỆN
+					for name in news
+						p= name
 				.links__connect
+					i.fa.fa-th-large.headIcon
+					h6 KẾT NỐI
+					ul
+						each item in connect
+							li
+								i(class= item.icon)
+								span= item.name				
 	.company
+		.container
+			.wrapper
+				.company__payment
+					p Thanh toán:
+					img(src="images/payment.jpg", alt="")
+				.company__support
+					p Giải đáp nhanh:
+					.company__support--advisory
+						img(src="images/phone.jpg", alt="")
+						.text
+							p Tư vấn miễn phí (24/7)
+							h6 1900 650 650 
+					.company__support--feedbacks
+						img(src="images/talk.jpg", alt="")
+						.text
+							p Góp ý - phản hồi - thắc mắc
+							h6 1900 650 650
 	.copyright
+		.container
+			.wrapper
+				.des
+					p 
+						| Bản quyền thuộc về 
+						span Design Team
+						|. Phát triển bởi 
+						span Bizweb
+						|.
+				.footermenu
+					ul
+						for name in footermenu
+							li= name 
