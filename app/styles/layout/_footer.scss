@@ -1,0 +1,178 @@
+.footer {
+    .links{
+        background-color: $color-beige;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding-top: 3.5rem;
+            padding-bottom: 2rem;
+            h6{
+                display:inline-block;
+                margin-bottom:2rem; 
+                margin-left: 0.3rem;
+            }
+            .headIcon{
+                position: relative;
+                display: inline-block;
+                font-size: 0.75rem;
+                color: $color-yellow;  
+            }
+            p{
+                font-size: $font-size-phone;
+                color:$color-gray-bold;
+            }
+            .links__about{
+                width: 25%;
+                &--description{
+                    p{
+                        padding-right: 0.5rem;
+                    }
+                }
+                &--contact{
+                    li {                        
+                        position: relative;   
+                        list-style: none;      
+                        padding-left: 3px;          
+                        i{    
+                            display: inline-block;                      
+                            width: 5%;                                    
+                        }
+                        span{
+                            display: inline-block;
+                            padding: 0.5rem;
+                            font-size: $font-size-phone;
+                        }
+                    }
+                    .location{
+                        i{
+                            position: absolute;
+                            top: 13px;
+                        }
+                        span{
+                            margin-left: 0.9rem;
+                        }
+                    }
+                }
+            }
+            .links__policy{
+                width: 20%;
+            }
+            .links__services{
+                width:20%;
+            }
+            .links__news{
+                width: 20%;
+            }
+            .links__connect{
+                width:15%;
+                ul{
+                    margin-top: -0.5rem;
+                    li {
+                        position: relative;   
+                        list-style: none;
+                        i{  
+                            display: inline-block;                        
+                            width: 6%;
+                            font-size: .75rem;                                
+                        }
+                        span{
+                            display: inline-block;
+                            padding: 0.5rem;
+                            font-size: $font-size-phone;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .company{
+        background-color: $color-beige;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            border-top: 1px solid $color-gray;
+            padding-top: 1rem;
+            p{
+                font-size: $font-size-phone;
+            }
+            .company__payment{
+                position: relative;
+                flex: 1 1 50%;
+                img{
+                    display: block;
+                }
+                p{
+                    display: block;
+                }
+            }
+            .company__support{
+                flex: 1 1 50%;
+                &--advisory{
+                    position: relative;
+                    display: inline-block;
+                    width: 50%;
+                    img{
+                        display: inline-block;
+                    }
+                    .text{
+                        display: inline-block;
+                        position: absolute;
+                        margin-top: 1rem;
+                        h6{
+                            margin-left: 1rem;
+                            margin-top: -0.8rem;
+                            color: $color-red;
+                        }
+                    }
+                }
+                &--feedbacks{
+                    display: inline-block;
+                    img{
+                        display: inline-block;
+                    }
+                    .text{
+                        position: absolute;
+                        display: inline-block;
+                        margin-top: 1rem;
+                        h6{
+                            margin-left: 0.3rem;
+                            margin-top: -0.8rem;
+                            color: $color-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        background-color:$color-black-footer;
+        .wrapper{
+            display: flex;
+            height: 2rem; 
+            .des{
+                margin-top: 0.35rem;
+                width:60%;
+                font-size: $font-size-phone;
+                color: $color-gray;
+                span{
+                    font-weight: 500;
+                    color: $color-white;
+                }
+            }
+            .footermenu{
+                width:40%;
+                ul{
+                    text-align: right;
+                    li{
+                        display: inline;
+                        padding: 0.2rem;
+                        font-size: $font-size-phone;
+                        color: $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}
