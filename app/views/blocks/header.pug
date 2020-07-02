@@ -1,43 +1,44 @@
 - var menubar = ["TRANG CHỦ","GIỚI THIỆU","SẢN PHẨM","TIN KHUYẾN MÃI","DỊCH VỤ","LIÊN HỆ"];
 - var icon = ["fa fa-facebook","fa fa-google-plus","fa fa-instagram","fa fa-twitter"]
 
-.navtop    
-	.container
-		.wrapper
-			.navtop__icon
-				.btn-group
-					for name in icon
-						button
-							i(class=name)
-			.navtop__entry
-				.btn-group
-					button ĐĂNG KÍ
-					button ĐĂNG NHẬP
-.navcenter
-	.container
-		.wrapper
-			.navcenter__logo
-				img(src="images/company.jpg", alt="")
-			.navcenter__phone
-				.navcenter__phone--hotline
-					h6 HOTLINE:
-					p  (04) 9500 9650 - (04) 9500 9650
-				.navcenter__phone--ship
-					h6  ĐẶT HÀNG NHANH:
-					p  (04) 9500 9650 - (04) 9500 9650
-				.navcenter__phone--search
-					form(action="")
-						input(type="search" placeholder="Tìm kiếm...")
-						span.i.fa.fa-search
-				
-.menu
-	.container
-		.wrapper
-			.menu__bar
-				.btn-group
-				for name in menubar
-					button= name
-			.menu__cart
-				button.menu__cart--btn
-					i.fa.fa-shopping-basket.basket
-						span.dot 0
+.header
+	.navtop    
+		.container
+			.wrapper
+				.navtop__icon
+					.btn-group
+						for name in icon
+							button
+								i(class=name)
+				.navtop__entry
+					.btn-group
+						button ĐĂNG KÍ
+						button ĐĂNG NHẬP
+	.navcenter
+		.container
+			.wrapper
+				.navcenter__logo
+					img(src="images/company.jpg", alt="")
+				.navcenter__phone
+					.navcenter__phone--hotline
+						h6 HOTLINE:
+						p  (04) 9500 9650 - (04) 9500 9650
+					.navcenter__phone--ship
+						h6  ĐẶT HÀNG NHANH:
+						p  (04) 9500 9650 - (04) 9500 9650
+					.navcenter__phone--search
+						form(action="")
+							input(type="text" placeholder="Tìm kiếm...")
+							span.i.fa.fa-search
+			
+	.menu
+		.container
+			.wrapper
+				.menu__bar
+					.btn-group
+					for name in menubar
+						button= name
+				.menu__cart
+					button.menu__cart--btn
+						i.fa.fa-shopping-basket.basket
+							span.dot 0

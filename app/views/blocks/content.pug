@@ -1,8 +1,28 @@
-.jumbotron.text-center
-    h1  My First Project
-    p   Resize to see
-.container
-    .row
-        +col('Column4','lorem')
-        +col('Column8','lorem')
-        +col('Column12','lorem')
+- var des = ["Thiết kế nhỏ gọn, phù hợp, đa mục đích","Mạnh mẽ, bền bỉ và hiệu suất lớn hơn","Khoan cắt với độ chính xác tuyệt đối"]
+.content
+	.about
+		.container
+			.wrapper
+				.about__banner
+					.about__banner--des
+						h3 MÁY KHOAN ĐA NĂNG
+						span DEWALT
+						ul
+							for name in des
+								li
+									i.fa.fa-check-circle-o
+									p= name
+						button ĐẶT HÀNG 
+					.about__banner--img
+						img(src="images/machine.jpg", alt="")
+				.about__benefits
+					.about__benefits--ship
+						i.fa.fa-plane
+						.text
+							h6 MIỄN PHÍ VẬN CHUYỂN
+							p Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.
+							
+
+
+
+

@@ -1,0 +1,44 @@
+.content{
+    .about {
+        background-color: $color-white;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            .about__banner{
+                width: 66%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                background-color: $color-gray1;
+                &--des{
+                    li {                        
+                        position: relative;          
+                        i{    
+                            display: inline-block;                                                              
+                        }
+                        p{
+                            display: inline-block;
+                            padding: 0.5rem;
+                            font-size: $font-size-phone;
+                        }
+                    }
+                    button{
+                        padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+                        background-color: $color-yellow;
+                        border: none;
+                        font-size: $font-size-phone;
+                        color: $color-white;
+                        outline: none;
+                    }
+                }
+                &--img{
+
+                }
+            }
+            .about__benefits{
+                width: 34%;
+            }
+        }
+    }
+}
