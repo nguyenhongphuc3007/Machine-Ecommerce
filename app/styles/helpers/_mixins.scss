@@ -91,3 +91,44 @@
 	align-items: $items;
 	flex-wrap: $wrap;
 }
+@mixin hover-banner {
+	background-color: $color-yellow;
+	i {
+		color: $color-white;
+	}
+	p {
+		color: $color-white;
+	}
+	h6 {
+		color: $color-white;
+	}
+}
+@mixin benefit {
+	height: 25%;
+	position: relative;
+	border: 1px solid $color-border;
+	transition: 0.5s linear;
+	cursor: pointer;
+	i{
+		text-align: center;
+		width: 25%;
+		display: inline-block;
+		font-size: 1.5rem;
+		margin: 13% 0 14% 0; 
+		color: $color-yellow;
+	}
+	.text{
+		width: 75%;
+		position: absolute;
+		display: inline-block;
+		margin: 29.5px 0 18.5px 0;
+		font-size:$font-size-phone;
+		h6{
+			color: $color-black1;
+		}
+		p{
+			color: $color-gray-bolder;
+			margin-right: 0.5rem;
+		}
+	}
+}

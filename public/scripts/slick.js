@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".about__banner").slick({autoplay:!0,autoplaySpeed:2e3,pauseOnFocus:!1,dotsClass:"original-dots",dots:!0})});

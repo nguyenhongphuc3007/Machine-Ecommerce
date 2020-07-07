@@ -9,12 +9,14 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   </head>
   <body class="home-page">
     <div class="wrapper">
@@ -64,6 +66,9 @@
         <div class="menu">
           <div class="container">
             <div class="wrapper">
+              <div class="toggle">
+                <div class="toggle__icon"><i class="fa fa-bars"></i></div>
+              </div>
               <div class="menu__bar">
                 <div class="btn-group"></div>
                 <button>TRANG CHỦ</button>
@@ -84,29 +89,30 @@
         <div class="about">
           <div class="container">
             <div class="wrapper">
-              <div class="about__banner">
-                <div class="about__banner--des">
-                  <h3>MÁY KHOAN ĐA NĂNG</h3><span>DEWALT</span>
-                  <ul>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Thiết kế nhỏ gọn, phù hợp, đa mục đích</p>
-                    </li>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Mạnh mẽ, bền bỉ và hiệu suất lớn hơn</p>
-                    </li>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Khoan cắt với độ chính xác tuyệt đối</p>
-                    </li>
-                  </ul>
-                  <button>ĐẶT HÀNG </button>
-                </div>
-                <div class="about__banner--img"><img src="images/machine.jpg" alt=""></div>
-              </div>
+              <div class="about__banner"><img src="images/slider.jpg" alt=""><img src="images/slider.jpg" alt=""><img src="images/slider.jpg" alt=""></div>
               <div class="about__benefits">
                 <div class="about__benefits--ship"><i class="fa fa-plane"></i>
                   <div class="text">
                     <h6>MIỄN PHÍ VẬN CHUYỂN</h6>
                     <p>Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.</p>
+                  </div>
+                </div>
+                <div class="about__benefits--policy"><i class="fa fa-refresh"></i>
+                  <div class="text">
+                    <h6>CHÍNH SÁCH ĐỔI TRẢ</h6>
+                    <p>Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi sản phẩm trong 7 ngày đầu tiên.</p>
+                  </div>
+                </div>
+                <div class="about__benefits--promo"><i class="fa fa-gift"></i>
+                  <div class="text">
+                    <h6>KHUYẾN MẠI HẰNG TUẦN</h6>
+                    <p>Mỗi thứ 7 hàng tuần đều có chương trình giảm giá và khuyến mại lớn.</p>
+                  </div>
+                </div>
+                <div class="about__benefits--commit"><i class="fa fa-thumbs-up"></i>
+                  <div class="text">
+                    <h6>CAM KẾT HÀNG CHÍNH HÃNG</h6>
+                    <p>Chúng tôi cam kết bán hàng chính hãng 100% với tất cả các loại sản phẩm.</p>
                   </div>
                 </div>
               </div>
@@ -218,5 +224,9 @@
       </div>
     </div>
     <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts/slick.js"></script>
   </body>
 </html>

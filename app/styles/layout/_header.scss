@@ -51,6 +51,9 @@
         &__logo{
             flex-grow: 1;
             width:15%;
+            img{
+                height: auto;
+            }
         }
         &__phone{
             display: flex;
@@ -121,6 +124,21 @@
             display:flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            .toggle{
+                width: 2%;
+                display: none;
+                i{
+                    width: 5%;
+                    color: white;
+                    top: 50%;
+                    margin-top: 32px;
+                }
+            }
+            .menu__bar{
+                button:not(:last-child) {
+                    border-right: none; 
+                } 
+            }
         }
         button {
             padding: 30px;
@@ -159,9 +177,6 @@
         button:hover {
             border: 1px solid $color-yellow ;
             background-color: $color-yellow;
-        }
-        .btn-group button:not(:last-child) {
-            border-right: none; 
         }
     }
 
