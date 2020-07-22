@@ -613,14 +613,15 @@
           .footer .links .wrapper .links__connect ul li i {
             display: inline-block;
             width: 6%;
-            font-size: .75rem; }
+            font-size: 0.75rem; }
           .footer .links .wrapper .links__connect ul li span {
             display: inline-block;
             position: absolute;
             font-size: 12px;
             left: 22px;
             top: 2px; }
-    .footer .links .wrapper li:hover, .footer .links .wrapper p:hover {
+    .footer .links .wrapper li:hover,
+    .footer .links .wrapper p:hover {
       color: #f5bd10;
       cursor: pointer; }
 
@@ -669,7 +670,8 @@
           max-width: 100%;
           height: auto; }
         @media (max-width: 767px) {
-          .footer .company .row .company__payment--img1 .img:nth-of-type(2), .footer .company .row .company__payment--img1 .img:nth-of-type(5) {
+          .footer .company .row .company__payment--img1 .img:nth-of-type(2),
+          .footer .company .row .company__payment--img1 .img:nth-of-type(5) {
             margin-left: 16px; } }
         .footer .company .row .company__payment--img1 .linebreak {
           display: none; }
@@ -699,7 +701,8 @@
           max-width: 100%;
           height: auto; }
         @media (max-width: 767px) {
-          .footer .company .row .company__payment--img2 .img:nth-of-type(2), .footer .company .row .company__payment--img2 .img:nth-of-type(5) {
+          .footer .company .row .company__payment--img2 .img:nth-of-type(2),
+          .footer .company .row .company__payment--img2 .img:nth-of-type(5) {
             margin-left: 16px; } }
         .footer .company .row .company__payment--img2 .linebreak {
           display: none; }
@@ -1212,7 +1215,8 @@
       .content .highlights__item--list ul li:hover {
         background-color: #202020;
         cursor: pointer; }
-        .content .highlights__item--list ul li:hover i, .content .highlights__item--list ul li:hover a {
+        .content .highlights__item--list ul li:hover i,
+        .content .highlights__item--list ul li:hover a {
           color: #f5bd10; }
       .content .highlights__item--list ul i {
         font-size: 9px;
@@ -1877,7 +1881,8 @@
     margin: 15px 0; }
     .brand__content--card .img img {
       margin: 0 auto; }
-  .brand .prev-arrow, .brand .next-arrow {
+  .brand .prev-arrow,
+  .brand .next-arrow {
     position: absolute;
     top: 40%;
     cursor: pointer;

@@ -1,38 +1,38 @@
-.brand{
-    background-color: $color-beige;
-    margin-top: 20px;
-    &__content{
-        &--card{
-            .img{
-                margin: 15px 0;
-                img{
-                    margin: 0 auto;
-                }
-            }
+.brand {
+  background-color: $color-beige;
+  margin-top: 20px;
+  &__content {
+    &--card {
+      .img {
+        margin: 15px 0;
+        img {
+          margin: 0 auto;
         }
+      }
     }
+  }
 
-    .prev-arrow,.next-arrow {
-        position: absolute;
-        top: 40%;
-        cursor: pointer;
-        font-weight: bold;
-        color: $color-grey-92;
-    }
+  .prev-arrow,
+  .next-arrow {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    font-weight: bold;
+    color: $color-grey-92;
+  }
 
-    .prev-arrow {
-        left: -20px;
-        @include mobile{
-            left:5px;
-            z-index: 4;
-        }
+  .prev-arrow {
+    left: -20px;
+    @include mobile {
+      left: 5px;
+      z-index: 4;
     }
+  }
 
-    .next-arrow {
-        right: -20px;
-        @include mobile{
-            right: 5px;
-        }
+  .next-arrow {
+    right: -20px;
+    @include mobile {
+      right: 5px;
     }
-    
+  }
 }
