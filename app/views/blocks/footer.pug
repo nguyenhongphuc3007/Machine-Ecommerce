@@ -7,77 +7,105 @@
 .footer
 	.links
 		.container
-			.wrapper
-				.links__about
-					i.fa.fa-th-large.headIcon
-					h6 VỀ CHÚNG TÔI
+			.wrapper.row
+				.links__about.col-lg-3
+					.links__about--header
+						i.fa.fa-th-large.head-icon
+						h6 VỀ CHÚNG TÔI
 					.links__about--description
 						p Công ty Cổ phần công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực thương mại điện tử
 					.links__about--contact
 						ul
 							li.location
 								i.fa.fa-map-marker
-								span Tầng 4 - Tòa nhà Hanoi group 
-									br
-									| 442 Đội Cấn Ba Đình - Hà Nội
+								span Tầng 4 - Tòa nhà Hanoi group 442 Đội Cấn Ba Đình - Hà Nội
 							li.email
 								i.fa.fa-envelope
 								span support@dkt.com.vn
 							li.phone
 								i.fa.fa-mobile
 								span (84-4) 66558868 - (84-4) 37868904
-				.links__policy
-					i.fa.fa-th-large.headIcon
-					h6 CHÍNH SÁCH
-					for name in policy
-						p= name
-				.links__services
-					i.fa.fa-th-large.headIcon
-					h6 DỊCH VỤ & HỖ TRỢ
-					for name in services
-						p= name
-				.links__news
-					i.fa.fa-th-large.headIcon
-					h6 TIN TỨC & SỰ KIỆN
-					for name in news
-						p= name
-				.links__connect
-					i.fa.fa-th-large.headIcon
-					h6 KẾT NỐI
-					ul
-						each item in connect
-							li
-								i(class= item.icon)
-								span= item.name				
+				.links__policy.col-lg-2
+					.links__policy--header
+						i.fa.fa-th-large.head-icon
+						h6 CHÍNH SÁCH
+					.links__policy--list
+						for name in policy
+							p= name
+				.links__services.col-lg-3
+					.links__services--header
+						i.fa.fa-th-large.head-icon
+						h6 DỊCH VỤ & HỖ TRỢ
+					.links__services--list
+						for name in services
+							p= name
+				.links__news.col-lg-3
+					.links__news--header
+						i.fa.fa-th-large.head-icon
+						h6 TIN TỨC & SỰ KIỆN
+					.links__news--list
+						for name in news
+							p= name
+				.links__connect.col-lg-1
+					.links__connect--header
+						i.fa.fa-th-large.head-icon
+						h6 KẾT NỐI
+					.links__connect--list
+						ul
+							each item in connect
+								li
+									i(class= item.icon)
+									span= item.name				
 	.company
 		.container
-			.wrapper
-				.company__payment
+			.row
+				.company__payment.col-md-6.col-12
 					p Thanh toán:
-					img(src="images/payment.jpg", alt="")
-				.company__support
+					.company__payment--img1
+						.img
+							img(src="images/techcombank.jpg", alt="")
+						.img
+							img(src="images/viettinbank.jpg", alt="")
+						.linebreak
+						.img
+							img(src="images/vpbank.jpg", alt="")
+						.img
+							img(src="images/tienphong.jpg", alt="")
+					.company__payment--img2
+						.img
+							img(src="images/maritime.jpg", alt="")
+						.img
+							img(src="images/donga.jpg", alt="")
+						.linebreak
+						.img
+							img(src="images/abbank.jpg", alt="")
+						.img
+							img(src="images/vietcapital.jpg", alt="")
+				.company__support.col-md-6
 					p Giải đáp nhanh:
 					.company__support--advisory
-						img(src="images/phone.jpg", alt="")
+						.img
+							img(src="images/phone.jpg", alt="")
 						.text
 							p Tư vấn miễn phí (24/7)
 							h6 1900 650 650 
 					.company__support--feedbacks
-						img(src="images/talk.jpg", alt="")
+						.img
+							img(src="images/talk.jpg", alt="")
 						.text
 							p Góp ý - phản hồi - thắc mắc
 							h6 1900 650 650
 	.copyright
 		.container
-			.wrapper
-				.des
+			.wrapper.row
+				.des.col-sm-12.col-lg-6
 					p 
 						| Bản quyền thuộc về 
 						span Design Team
 						|. Phát triển bởi 
 						span Bizweb
 						|.
-				.footermenu
+				.footermenu.col-sm-12.col-lg-6
 					ul
 						for name in footermenu
 							li= name 

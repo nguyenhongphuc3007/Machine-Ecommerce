@@ -1,0 +1,9 @@
+- var brand = ["flame.png","art.png","media.png","brain.png","mamolog.png","flame.png","art.png","media.png","brain.png","mamolog.png"]
+.brand
+    .container
+        .row.brand__content 
+            for name in brand
+                .col-sm-12
+                    .brand__content--card
+                        .img 
+                            img(src="images/"+name, alt="")

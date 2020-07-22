@@ -1,0 +1,78 @@
+.newsletter{
+    position: relative;
+
+    &__img{
+        overflow: hidden;
+        @include mobile{
+            overflow: hidden;
+            height: 75%;
+        }
+    }
+
+    .container{
+        position: absolute;
+        top: 30%;
+        right: 0;
+        left: 0;
+        @include mobile{
+            top: 10%;
+        }
+    }
+
+    &__content{
+        z-index: 4;
+        text-align: center;
+        @include mobile{
+            flex-direction: column;
+        }
+
+        p{
+            font-size: $font-18;
+            color: $color-white;
+            @include mobile{
+                width: 71%;
+                margin: 0 auto;
+  
+            }
+        }
+
+        &--form{
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                margin-top: 23px;
+            }
+
+            input{
+                outline: none;
+                width: 34%;
+                padding: 9px 0;
+                border-radius: 25px;
+                border: none;
+                text-indent: 3%;
+                font-size: $font-12;
+                color: $color-gray;
+                @include mobile{
+                    width: 100%;
+                    text-align: center;
+                    padding: 12px 0;
+                }
+            }
+            
+            button{
+                border-radius: 25px;
+                border: none;
+                background-color: $color-yellow;
+                width: 10%;
+                padding: 9px 0;
+                font-size: $font-12;
+                color: $color-white;
+                @include mobile{
+                    width: 100%;
+                    transform: translateY(5px);
+                    padding: 12px 0;
+                }
+            }
+        }
+    }
+}
