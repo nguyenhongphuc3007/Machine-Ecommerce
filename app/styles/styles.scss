@@ -4,12 +4,14 @@
 
 @import "base/typography";
 @import "helpers/ultilities";
+@import "helpers/media";
 
 @import "layout/structure";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/content";
-
+@import "layout/newsletter";
+@import "layout/brand";
 
 @import "components/button";
 

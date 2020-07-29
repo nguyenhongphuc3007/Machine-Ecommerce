@@ -9,12 +9,14 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   </head>
   <body class="home-page">
     <div class="wrapper">
@@ -41,21 +43,25 @@
         </div>
         <div class="navcenter">
           <div class="container">
-            <div class="wrapper">
-              <div class="navcenter__logo"><img src="images/company.jpg" alt=""></div>
-              <div class="navcenter__phone">
-                <div class="navcenter__phone--hotline">
+            <div class="wrapper row">
+              <div class="navcenter__logo col-lg-3 col-12">
+                <div class="img"><img src="images/company.jpg" alt=""></div>
+              </div>
+              <div class="navcenter__hotline col-lg-3">
+                <div class="navcenter__hotline--des">
                   <h6>HOTLINE:</h6>
                   <p> (04) 9500 9650 - (04) 9500 9650</p>
                 </div>
-                <div class="navcenter__phone--ship">
+              </div>
+              <div class="navcenter__ship col-lg-3">
+                <div class="navcenter__ship--des">
                   <h6> ĐẶT HÀNG NHANH:</h6>
                   <p> (04) 9500 9650 - (04) 9500 9650</p>
                 </div>
-                <div class="navcenter__phone--search">
-                  <form action="">
-                    <input type="text" placeholder="Tìm kiếm..."><span class="i fa fa-search"></span>
-                  </form>
+              </div>
+              <div class="navcenter__search col-lg-3 col-12">
+                <div class="navcenter__search--des">
+                  <input type="text" placeholder="Tìm kiếm..."><span class="i fa fa-search"></span>
                 </div>
               </div>
             </div>
@@ -65,16 +71,22 @@
           <div class="container">
             <div class="wrapper">
               <div class="menu__bar">
-                <div class="btn-group"></div>
-                <button>TRANG CHỦ</button>
-                <button>GIỚI THIỆU</button>
-                <button>SẢN PHẨM</button>
-                <button>TIN KHUYẾN MÃI</button>
-                <button>DỊCH VỤ</button>
-                <button>LIÊN HỆ</button>
+                <div class="btn-group">
+                  <button>TRANG CHỦ</button>
+                  <button>GIỚI THIỆU</button>
+                  <button>SẢN PHẨM</button>
+                  <button>TIN KHUYẾN MÃI</button>
+                  <button>DỊCH VỤ</button>
+                  <button>LIÊN HỆ</button>
+                </div>
               </div>
-              <div class="menu__cart">
-                <button class="menu__cart--btn"><i class="fa fa-shopping-basket basket"><span class="dot">0</span></i></button>
+              <div class="menu__right">
+                <div class="menu__right--toggle">
+                  <button><i class="fa fa-bars"></i></button>
+                </div>
+                <div class="menu__right--cart">
+                  <button class="menu__cart--btn"><i class="fa fa-shopping-basket basket"><span class="dot">0</span></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -83,32 +95,838 @@
       <div class="content">
         <div class="about">
           <div class="container">
-            <div class="wrapper">
-              <div class="about__banner">
-                <div class="about__banner--des">
-                  <h3>MÁY KHOAN ĐA NĂNG</h3><span>DEWALT</span>
-                  <ul>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Thiết kế nhỏ gọn, phù hợp, đa mục đích</p>
-                    </li>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Mạnh mẽ, bền bỉ và hiệu suất lớn hơn</p>
-                    </li>
-                    <li><i class="fa fa-check-circle-o"></i>
-                      <p>Khoan cắt với độ chính xác tuyệt đối</p>
-                    </li>
-                  </ul>
-                  <button>ĐẶT HÀNG </button>
+            <div class="row no-gutters">
+              <div class="about__banner col-lg-8 col-md-12">
+                <div class="row row-banner">
+                  <div class="about__banner--img col-sm-12 col-xs-12"><img src="images/slider.jpg" alt=""></div>
+                  <div class="about__banner--img col-sm-12 col-xs-12"><img src="images/slider.jpg" alt=""></div>
+                  <div class="about__banner--img col-sm-12 col-xs-12"><img src="images/slider.jpg" alt=""></div>
                 </div>
-                <div class="about__banner--img"><img src="images/machine.jpg" alt=""></div>
               </div>
-              <div class="about__benefits">
-                <div class="about__benefits--ship"><i class="fa fa-plane"></i>
+              <div class="about__benefits col-lg-4 col-md-12 col-xs-12">
+                <div class="about__benefits--ship">
+                  <div class="logo"><i class="fa fa-plane"></i></div>
                   <div class="text">
-                    <h6>MIỄN PHÍ VẬN CHUYỂN</h6>
-                    <p>Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.</p>
+                    <div class="text-des">
+                      <h6>MIỄN PHÍ VẬN CHUYỂN</h6>
+                      <p>Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.</p>
+                    </div>
                   </div>
                 </div>
+                <div class="about__benefits--policy">
+                  <div class="logo"><i class="fa fa-refresh"></i></div>
+                  <div class="text">
+                    <div class="text-des">
+                      <h6>CHÍNH SÁCH ĐỔI TRẢ</h6>
+                      <p>Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi sản phẩm trong 7 ngày đầu tiên.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__benefits--promo">
+                  <div class="logo"><i class="fa fa-gift"></i></div>
+                  <div class="text">
+                    <div class="text-des">
+                      <h6>KHUYẾN MẠI HẰNG TUẦN</h6>
+                      <p>Mỗi thứ 7 hàng tuần đều có chương trình giảm giá và khuyến mại lớn.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__benefits--commit">
+                  <div class="logo"><i class="fa fa-thumbs-up"></i></div>
+                  <div class="text">
+                    <div class="text-des">
+                      <h6>CAM KẾT HÀNG CHÍNH HÃNG</h6>
+                      <p>Chúng tôi cam kết bán hàng chính hãng 100% với tất cả các loại sản phẩm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highlights">
+          <div class="container">
+            <div class="row highlights__header">
+              <div class="highlights__header__left col-md-4 col-8"><i class="fa fa-th-large headIcon"></i>
+                <h6>SẢN PHẨM NỔI BẬT</h6>
+              </div>
+              <div class="highlights__header__navigation col-md-3 col-4">
+                <div class="highlights__header__navigation--prev"><i class="fa fa-caret-left"></i></div>
+                <div class="highlights__header__navigation--next"><i class="fa fa-caret-right"></i></div>
+              </div>
+            </div>
+            <div class="row highlights__item">
+              <div class="highlights__item--list col-md-12 col-lg-3">
+                <ul class="default_option">
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy khoan, cắt CNC</a></li>
+                </ul>
+                <ul class="select_ul">
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy khoan,cắt CNC</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy in phun khổ lớn</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy quét Canon 3D</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy hàn điện Alumia</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy khoan Decameta</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy phay đa năng CNC</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy mài, tiện DC 12V</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy khoan, cắt CNC</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy quay thông minh N3</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Moto R34C Đa dụng</a></li>
+                  <li><i class="fa fa-th-large headIcon"></i><a>Máy in laser màu 3D</a></li>
+                </ul>
+              </div>
+              <div class="highlights__item--des col-md-12 col-12 col-lg-9">
+                <div class="row row-hl">
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-1.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-2.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-3.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-4.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-4.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-5.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-6.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-1.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-2.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-3.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-4.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-xs-12 each">
+                    <div class="highlights__item--des--card">
+                      <div class="card--img"><img src="images/hl-4.jpg" alt=""></div>
+                      <p class="price">1.550.000 Đ</p>
+                      <h6>MÁY KHOAN BLACK DECKER</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <div class="card-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT			</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new">
+          <div class="container">
+            <div class="wrapper">
+              <div class="new-header row">
+                <div class="new-header__left col-xl-4 col-6 col-md-3"><i class="fa fa-th-large head-icon"></i>
+                  <h6>SẢN PHẨM MỚI</h6>
+                </div>
+                <div class="new-header__category col-xl-7 col-md-7">
+                  <ul>
+                    <li>Máy khoan</li>
+                    <li>Máy in 3D</li>
+                    <li>Máy CNC</li>
+                    <li>Máy tiện</li>
+                    <li>Máy khác</li>
+                  </ul>
+                </div>
+                <div class="new-header__navigation col-xl-1 col-6 col-md-2">
+                  <div class="new-header__navigation--prev"><i class="fa fa-caret-left"></i></div>
+                  <div class="new-header__navigation--next"><i class="fa fa-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="new-product row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-1.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-2.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-3.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-1.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-2.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="new-product__card">
+                    <div class="img text-center"><img src="images/new-3.jpg" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)		</p>
+                    </div>
+                    <div class="new-product__card--btn">
+                      <button>MUA NGAY</button>
+                      <button>XEM CHI TIẾT			</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="container">
+            <div class="wrapper">
+              <div class="banner-1"><img src="images/banner2.png" alt=""></div>
+              <div class="banner-2"><img src="images/banner1.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="best-seller">
+          <div class="container">
+            <div class="wrapper">
+              <div class="best-seller-header row">
+                <div class="best-seller-header__left col-xl-4 col-7 col-lg-4"><i class="fa fa-th-large head-icon"></i>
+                  <h6>SẢN PHẨM BÁN CHẠY</h6>
+                </div>
+                <div class="best-seller-header__category col-xl-7 col-lg-6">
+                  <ul>
+                    <li>Máy khoan</li>
+                    <li>Máy in 3D</li>
+                    <li>Máy CNC</li>
+                    <li>Máy tiện</li>
+                    <li>Máy khác</li>
+                  </ul>
+                </div>
+                <div class="best-seller-header__navigation col-xl-1 col-5 col-lg-2">
+                  <div class="best-seller-header__navigation--prev"><i class="fa fa-caret-left"></i></div>
+                  <div class="best-seller-header__navigation--next"><i class="fa fa-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="best-seller__product1 row">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-2.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="best-seller-card--big">
+                        <div class="img"><img src="images/best-seller-3.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-4.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-5.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)				</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-2.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="best-seller-card--big">
+                        <div class="img"><img src="images/best-seller-3.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-4.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-5.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)				</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-2.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="best-seller-card--big">
+                        <div class="img"><img src="images/best-seller-3.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-4.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)</p>
+                        </div>
+                      </div>
+                      <div class="best-seller-card--small">
+                        <div class="img"><img src="images/best-seller-5.png" alt=""></div>
+                        <p class="price">1.550.000 Đ</p>
+                        <h6>MÁY KHOAN BLACK DECKER</h6>
+                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                          <p class="rate">(12 đánh giá)				</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-seller__product2 row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-2.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-4.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-5.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="best-seller-card--small">
+                    <div class="img"><img src="images/best-seller-1.png" alt=""></div>
+                    <p class="price">1.550.000 Đ</p>
+                    <h6>MÁY KHOAN BLACK DECKER</h6>
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                      <p class="rate">(12 đánh giá)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-seller-rocket">
+                <div class="img"><img src="images/banner3.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recent">
+          <div class="container">
+            <div class="wrapper">
+              <div class="recent-header">
+                <div class="recent-header__left"><i class="fa fa-th-large head-icon"></i>
+                  <h6>HÀNG MỚI VỀ</h6>
+                </div>
+                <div class="recent-header__navigation">
+                  <div class="recent-header__navigation--prev"><i class="fa fa-caret-left"></i></div>
+                  <div class="recent-header__navigation--next"><i class="fa fa-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="recent-product row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-01.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-02.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-03.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-04.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-01.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-02.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-03.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="recent-product__card">
+                    <div class="recent-product__card--img"><img src="images/new-arrival-04.jpg" alt=""></div>
+                    <div class="recent-product__card--des">
+                      <h6>MÁY KHOAN CNC 3D</h6>
+                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        <p class="rate">(12 đánh giá)</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...</p>
+                      <p class="price">2.350.000 Đ</p>
+                      <div class="recent-product__card--des-btn">
+                        <button>MUA NGAY</button>
+                        <button>XEM CHI TIẾT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row brand__content"> 
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/flame.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/art.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/media.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/brain.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/mamolog.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/flame.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/art.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/media.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/brain.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="brand__content--card">
+                <div class="img"> <img src="images/mamolog.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="newsletter__img"> <img src="images/newsletter.png" alt=""></div>
+        <div class="container">
+          <div class="newsletter__content row">
+            <div class="col-md-12">
+              <p>Đăng kí để nhận tin tức khuyến mại hằng tuần</p>
+              <div class="newsletter__content--form">
+                <input type="text" placeholder="Nhập email của bạn..">
+                <button>ĐĂNG KÍ</button>
               </div>
             </div>
           </div>
@@ -117,75 +935,109 @@
       <div class="footer">
         <div class="links">
           <div class="container">
-            <div class="wrapper">
-              <div class="links__about"><i class="fa fa-th-large headIcon"></i>
-                <h6>VỀ CHÚNG TÔI</h6>
+            <div class="wrapper row">
+              <div class="links__about col-lg-3">
+                <div class="links__about--header"><i class="fa fa-th-large head-icon"></i>
+                  <h6>VỀ CHÚNG TÔI</h6>
+                </div>
                 <div class="links__about--description">
                   <p>Công ty Cổ phần công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực thương mại điện tử</p>
                 </div>
                 <div class="links__about--contact">
                   <ul>
-                    <li class="location"><i class="fa fa-map-marker"></i><span>Tầng 4 - Tòa nhà Hanoi group <br>442 Đội Cấn Ba Đình - Hà Nội</span></li>
+                    <li class="location"><i class="fa fa-map-marker"></i><span>Tầng 4 - Tòa nhà Hanoi group 442 Đội Cấn Ba Đình - Hà Nội</span></li>
                     <li class="email"><i class="fa fa-envelope"></i><span>support@dkt.com.vn</span></li>
                     <li class="phone"><i class="fa fa-mobile"></i><span>(84-4) 66558868 - (84-4) 37868904</span></li>
                   </ul>
                 </div>
               </div>
-              <div class="links__policy"><i class="fa fa-th-large headIcon"></i>
-                <h6>CHÍNH SÁCH</h6>
-                <p>Chính sách giao hàng</p>
-                <p>Chính sách đổi sản phẩm</p>
-                <p>Chính sách bảo hành</p>
-                <p>Chính sách trả góp</p>
-                <p>Giới thiệu hàng đổi trả</p>
-                <p>Vận chuyển miễn phí</p>
+              <div class="links__policy col-lg-2">
+                <div class="links__policy--header"><i class="fa fa-th-large head-icon"></i>
+                  <h6>CHÍNH SÁCH</h6>
+                </div>
+                <div class="links__policy--list">
+                  <p>Chính sách giao hàng</p>
+                  <p>Chính sách đổi sản phẩm</p>
+                  <p>Chính sách bảo hành</p>
+                  <p>Chính sách trả góp</p>
+                  <p>Giới thiệu hàng đổi trả</p>
+                  <p>Vận chuyển miễn phí</p>
+                </div>
               </div>
-              <div class="links__services"><i class="fa fa-th-large headIcon"></i>
-                <h6>DỊCH VỤ & HỖ TRỢ</h6>
-                <p>Hệ thống cửa hàng</p>
-                <p>Hướng dẫn mua hàng</p>
-                <p>Hướng dẫn thanh toán</p>
-                <p>Tích điểm đổi thưởng</p>
-                <p>Dịch vụ đổi trả hàng</p>
-                <p>Câu hỏi thường gặp</p>
+              <div class="links__services col-lg-3">
+                <div class="links__services--header"><i class="fa fa-th-large head-icon"></i>
+                  <h6>DỊCH VỤ & HỖ TRỢ</h6>
+                </div>
+                <div class="links__services--list">
+                  <p>Hệ thống cửa hàng</p>
+                  <p>Hướng dẫn mua hàng</p>
+                  <p>Hướng dẫn thanh toán</p>
+                  <p>Tích điểm đổi thưởng</p>
+                  <p>Dịch vụ đổi trả hàng</p>
+                  <p>Câu hỏi thường gặp</p>
+                </div>
               </div>
-              <div class="links__news"><i class="fa fa-th-large headIcon"></i>
-                <h6>TIN TỨC & SỰ KIỆN</h6>
-                <p>Tin tức mới nhất</p>
-                <p>Tin tức khuyến mại</p>
-                <p>Tuyển dụng, đãi ngộ</p>
-                <p>Download tài liệu</p>
-                <p>Chương trình đối tác</p>
-                <p>Nhà phát triển ứng dụng</p>
+              <div class="links__news col-lg-3">
+                <div class="links__news--header"><i class="fa fa-th-large head-icon"></i>
+                  <h6>TIN TỨC & SỰ KIỆN</h6>
+                </div>
+                <div class="links__news--list">
+                  <p>Tin tức mới nhất</p>
+                  <p>Tin tức khuyến mại</p>
+                  <p>Tuyển dụng, đãi ngộ</p>
+                  <p>Download tài liệu</p>
+                  <p>Chương trình đối tác</p>
+                  <p>Nhà phát triển ứng dụng</p>
+                </div>
               </div>
-              <div class="links__connect"><i class="fa fa-th-large headIcon"></i>
-                <h6>KẾT NỐI</h6>
-                <ul>
-                  <li><i class="fa fa-facebook"></i><span>Facebook</span></li>
-                  <li><i class="fa fa-twitter"></i><span>Twitter</span></li>
-                  <li><i class="fa fa-google-plus"></i><span>Google</span></li>
-                  <li><i class="fa fa-skype"></i><span>Skype</span></li>
-                  <li><i class="fa fa-instagram"></i><span>Instagram</span></li>
-                </ul>
+              <div class="links__connect col-lg-1">
+                <div class="links__connect--header"><i class="fa fa-th-large head-icon"></i>
+                  <h6>KẾT NỐI</h6>
+                </div>
+                <div class="links__connect--list">
+                  <ul>
+                    <li><i class="fa fa-facebook"></i><span>Facebook</span></li>
+                    <li><i class="fa fa-twitter"></i><span>Twitter</span></li>
+                    <li><i class="fa fa-google-plus"></i><span>Google</span></li>
+                    <li><i class="fa fa-skype"></i><span>Skype</span></li>
+                    <li><i class="fa fa-instagram"></i><span>Instagram</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="company">
           <div class="container">
-            <div class="wrapper">
-              <div class="company__payment">
-                <p>Thanh toán:</p><img src="images/payment.jpg" alt="">
+            <div class="row">
+              <div class="company__payment col-md-6 col-12">
+                <p>Thanh toán:</p>
+                <div class="company__payment--img1">
+                  <div class="img"><img src="images/techcombank.jpg" alt=""></div>
+                  <div class="img"><img src="images/viettinbank.jpg" alt=""></div>
+                  <div class="linebreak"></div>
+                  <div class="img"><img src="images/vpbank.jpg" alt=""></div>
+                  <div class="img"><img src="images/tienphong.jpg" alt=""></div>
+                </div>
+                <div class="company__payment--img2">
+                  <div class="img"><img src="images/maritime.jpg" alt=""></div>
+                  <div class="img"><img src="images/donga.jpg" alt=""></div>
+                  <div class="linebreak"></div>
+                  <div class="img"><img src="images/abbank.jpg" alt=""></div>
+                  <div class="img"><img src="images/vietcapital.jpg" alt=""></div>
+                </div>
               </div>
-              <div class="company__support">
+              <div class="company__support col-md-6">
                 <p>Giải đáp nhanh:</p>
-                <div class="company__support--advisory"><img src="images/phone.jpg" alt="">
+                <div class="company__support--advisory">
+                  <div class="img"><img src="images/phone.jpg" alt=""></div>
                   <div class="text">
                     <p>Tư vấn miễn phí (24/7)</p>
                     <h6>1900 650 650 </h6>
                   </div>
                 </div>
-                <div class="company__support--feedbacks"><img src="images/talk.jpg" alt="">
+                <div class="company__support--feedbacks">
+                  <div class="img"><img src="images/talk.jpg" alt=""></div>
                   <div class="text">
                     <p>Góp ý - phản hồi - thắc mắc</p>
                     <h6>1900 650 650</h6>
@@ -197,12 +1049,12 @@
         </div>
         <div class="copyright">
           <div class="container">
-            <div class="wrapper">
-              <div class="des">
+            <div class="wrapper row">
+              <div class="des col-sm-12 col-lg-6">
                 <p>
                    Bản quyền thuộc về <span>Design Team</span>. Phát triển bởi <span>Bizweb</span>.</p>
               </div>
-              <div class="footermenu">
+              <div class="footermenu col-sm-12 col-lg-6">
                 <ul>
                   <li>Trang chủ</li>
                   <li>Giới thiệu</li>
@@ -217,6 +1069,10 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/slick.js"></script>
+    <script src="scripts/slick1.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 - var menubar = ["TRANG CHỦ","GIỚI THIỆU","SẢN PHẨM","TIN KHUYẾN MÃI","DỊCH VỤ","LIÊN HỆ"];
 - var icon = ["fa fa-facebook","fa fa-google-plus","fa fa-instagram","fa fa-twitter"]
-
+- var mega = ["Máy khoan CNC điện","Máy phay đa năng 3R","Máy hàn, cắt kim loại","Máy in phun tích điện"]
 .header
 	.navtop    
 		.container
@@ -16,29 +16,34 @@
 						button ĐĂNG NHẬP
 	.navcenter
 		.container
-			.wrapper
-				.navcenter__logo
-					img(src="images/company.jpg", alt="")
-				.navcenter__phone
-					.navcenter__phone--hotline
+			.wrapper.row
+				.navcenter__logo.col-lg-3.col-12
+					.img
+						img(src="images/company.jpg", alt="")
+				.navcenter__hotline.col-lg-3
+					.navcenter__hotline--des
 						h6 HOTLINE:
 						p  (04) 9500 9650 - (04) 9500 9650
-					.navcenter__phone--ship
+				.navcenter__ship.col-lg-3
+					.navcenter__ship--des
 						h6  ĐẶT HÀNG NHANH:
 						p  (04) 9500 9650 - (04) 9500 9650
-					.navcenter__phone--search
-						form(action="")
-							input(type="text" placeholder="Tìm kiếm...")
-							span.i.fa.fa-search
-			
+				.navcenter__search.col-lg-3.col-12
+					.navcenter__search--des
+						input(type="text" placeholder="Tìm kiếm...")
+						span.i.fa.fa-search
 	.menu
 		.container
 			.wrapper
 				.menu__bar
 					.btn-group
-					for name in menubar
-						button= name
-				.menu__cart
-					button.menu__cart--btn
-						i.fa.fa-shopping-basket.basket
-							span.dot 0
+						for name in menubar
+							button= name
+				.menu__right
+					.menu__right--toggle
+						button
+							i.fa.fa-bars
+					.menu__right--cart
+						button.menu__cart--btn
+							i.fa.fa-shopping-basket.basket
+								span.dot 0

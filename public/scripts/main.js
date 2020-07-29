@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){$(".menu__right--toggle").click(function(){$(".menu__bar").toggle()})}),$(document).ready(function(){$(".default_option").click(function(){$(".select_ul").toggleClass("active"),$(".default_option").toggleClass("active")}),$(".select_ul li").click(function(){var t=$(this).html();$(".default_option li").html(t),$(".select_ul").removeClass("active"),$(".default_option").removeClass("active")})});

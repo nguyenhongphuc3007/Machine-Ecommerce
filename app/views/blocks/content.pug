@@ -1,27 +1,397 @@
 - var des = ["Thiết kế nhỏ gọn, phù hợp, đa mục đích","Mạnh mẽ, bền bỉ và hiệu suất lớn hơn","Khoan cắt với độ chính xác tuyệt đối"]
+- var list = ["Máy khoan,cắt CNC","Máy in phun khổ lớn","Máy quét Canon 3D","Máy hàn điện Alumia","Máy khoan Decameta","Máy phay đa năng CNC","Máy mài, tiện DC 12V","Máy khoan, cắt CNC","Máy quay thông minh N3","Moto R34C Đa dụng","Máy in laser màu 3D"]
+- var product =["Máy khoan","Máy in 3D","Máy CNC","Máy tiện","Máy khác"]
+- var hl = ["hl-1.jpg","hl-2.jpg","hl-3.jpg","hl-4.jpg","hl-4.jpg","hl-5.jpg","hl-6.jpg","hl-1.jpg","hl-2.jpg","hl-3.jpg","hl-4.jpg","hl-4.jpg"]
+- var recent = ["new-arrival-01.jpg","new-arrival-02.jpg","new-arrival-03.jpg","new-arrival-04.jpg","new-arrival-01.jpg","new-arrival-02.jpg","new-arrival-03.jpg","new-arrival-04.jpg",]
+- var newproduct = ["new-1.jpg","new-2.jpg","new-3.jpg","new-1.jpg","new-2.jpg","new-3.jpg"]
+- var bestseller = ["best-seller-1.png","best-seller-2.png","best-seller-1.png","best-seller-4.png","best-seller-5.png","best-seller-1.png"]
 .content
 	.about
 		.container
-			.wrapper
-				.about__banner
-					.about__banner--des
-						h3 MÁY KHOAN ĐA NĂNG
-						span DEWALT
-						ul
-							for name in des
-								li
-									i.fa.fa-check-circle-o
-									p= name
-						button ĐẶT HÀNG 
-					.about__banner--img
-						img(src="images/machine.jpg", alt="")
-				.about__benefits
+			.row.no-gutters
+				.about__banner.col-lg-8.col-md-12
+					.row.row-banner
+						.about__banner--img.col-sm-12.col-xs-12
+							img(src="images/slider.jpg", alt="")
+						.about__banner--img.col-sm-12.col-xs-12
+							img(src="images/slider.jpg", alt="")
+						.about__banner--img.col-sm-12.col-xs-12
+							img(src="images/slider.jpg", alt="")
+				.about__benefits.col-lg-4.col-md-12.col-xs-12
 					.about__benefits--ship
-						i.fa.fa-plane
+						.logo
+							i.fa.fa-plane
 						.text
-							h6 MIỄN PHÍ VẬN CHUYỂN
-							p Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.
-							
+							.text-des
+								h6 MIỄN PHÍ VẬN CHUYỂN
+								p Chúng tôi vận chuyển miễn phí vói các đơn hàng trị giá trên 1.000.000 Đ.
+					.about__benefits--policy
+						.logo
+							i.fa.fa-refresh
+						.text
+							.text-des
+								h6 CHÍNH SÁCH ĐỔI TRẢ
+								p Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi sản phẩm trong 7 ngày đầu tiên.
+					.about__benefits--promo
+						.logo
+							i.fa.fa-gift
+						.text
+							.text-des
+								h6 KHUYẾN MẠI HẰNG TUẦN
+								p Mỗi thứ 7 hàng tuần đều có chương trình giảm giá và khuyến mại lớn.
+					.about__benefits--commit
+						.logo
+							i.fa.fa-thumbs-up
+						.text
+							.text-des
+								h6 CAM KẾT HÀNG CHÍNH HÃNG
+								p Chúng tôi cam kết bán hàng chính hãng 100% với tất cả các loại sản phẩm.
+	.highlights
+		.container
+			.row.highlights__header
+				.highlights__header__left.col-md-4.col-8
+					i.fa.fa-th-large.headIcon
+					h6 SẢN PHẨM NỔI BẬT
+				.highlights__header__navigation.col-md-3.col-4
+					.highlights__header__navigation--prev
+						i.fa.fa-caret-left
+					.highlights__header__navigation--next
+						i.fa.fa-caret-right
+			.row.highlights__item
+				.highlights__item--list.col-md-12.col-lg-3
+					ul.default_option
+						li
+							i.fa.fa-th-large.headIcon
+							a Máy khoan, cắt CNC
+					ul.select_ul
+						for name in list
+							li
+								i.fa.fa-th-large.headIcon
+								a= name
+				.highlights__item--des.col-md-12.col-12.col-lg-9
+					.row.row-hl
+						for name in hl
+							.col-sm-12.col-xs-12.each
+								.highlights__item--des--card
+									.card--img
+										img(src="images/"+name, alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+									.card-btn
+										button MUA NGAY
+										button XEM CHI TIẾT			
+	.new
+		.container
+			.wrapper
+				.new-header.row
+					.new-header__left.col-xl-4.col-6.col-md-3
+						i.fa.fa-th-large.head-icon
+						h6 SẢN PHẨM MỚI
+					.new-header__category.col-xl-7.col-md-7
+						ul
+							for name in product
+								li= name
+					.new-header__navigation.col-xl-1.col-6.col-md-2
+						.new-header__navigation--prev
+							i.fa.fa-caret-left
+						.new-header__navigation--next
+							i.fa.fa-caret-right
+				.new-product.row
+					for name in newproduct
+						.col-sm-12.col-xs-12
+							.new-product__card
+								.img.text-center
+									img(src="images/"+name, alt="")
+								p.price 1.550.000 Đ
+								h6 MÁY KHOAN BLACK DECKER
+								.rating
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star-o
+									p.rate (12 đánh giá)		
+								.new-product__card--btn
+									button MUA NGAY
+									button XEM CHI TIẾT			
+	.banner
+		.container
+			.wrapper
+				.banner-1
+					img(src="images/banner2.png", alt="")
+				.banner-2
+					img(src="images/banner1.jpg", alt="")
+	.best-seller
+		.container
+			.wrapper
+				.best-seller-header.row
+					.best-seller-header__left.col-xl-4.col-7.col-lg-4
+						i.fa.fa-th-large.head-icon
+						h6 SẢN PHẨM BÁN CHẠY
+					.best-seller-header__category.col-xl-7.col-lg-6
+						ul
+							for name in product
+								li= name
+					.best-seller-header__navigation.col-xl-1.col-5.col-lg-2
+						.best-seller-header__navigation--prev
+							i.fa.fa-caret-left
+						.best-seller-header__navigation--next
+							i.fa.fa-caret-right
+				.best-seller__product1.row
+					.col-sm-12
+						.row
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-1.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-2.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-6
+								.best-seller-card--big
+									.img
+										img(src="images/best-seller-3.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-4.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-5.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)				
+					.col-sm-12
+						.row
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-1.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-2.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-6
+								.best-seller-card--big
+									.img
+										img(src="images/best-seller-3.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-4.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-5.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)				
+					.col-sm-12
+						.row
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-1.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-2.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-6
+								.best-seller-card--big
+									.img
+										img(src="images/best-seller-3.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+							.col-sm-3
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-4.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+								.best-seller-card--small
+									.img
+										img(src="images/best-seller-5.png", alt="")
+									p.price 1.550.000 Đ
+									h6 MÁY KHOAN BLACK DECKER
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)				
+				.best-seller__product2.row
+					for name in bestseller
+						.col-sm-12.col-xs-12
+							.best-seller-card--small
+								.img
+									img(src="images/"+name, alt="")
+								p.price 1.550.000 Đ
+								h6 MÁY KHOAN BLACK DECKER
+								.rating
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star-o
+									p.rate (12 đánh giá)
+				.best-seller-rocket
+					.img
+						img(src="images/banner3.jpg", alt="")
+	.recent
+		.container
+			.wrapper
+				.recent-header
+					.recent-header__left
+						i.fa.fa-th-large.head-icon
+						h6 HÀNG MỚI VỀ
+					.recent-header__navigation
+						.recent-header__navigation--prev
+							i.fa.fa-caret-left
+						.recent-header__navigation--next
+							i.fa.fa-caret-right
+				.recent-product.row
+					for name in recent
+						.col-sm-12.col-xs-12
+							.recent-product__card
+								.recent-product__card--img
+									img(src="images/"+name, alt="")
+								.recent-product__card--des
+									h6 MÁY KHOAN CNC 3D
+									.rating
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+										p.rate (12 đánh giá)
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore commo...
+									p.price 2.350.000 Đ
+									.recent-product__card--des-btn
+										button MUA NGAY
+										button XEM CHI TIẾT
+
+
 
 
 

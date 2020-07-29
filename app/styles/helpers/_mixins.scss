@@ -91,3 +91,33 @@
 	align-items: $items;
 	flex-wrap: $wrap;
 }
+@mixin hover-banner {
+	background-color: $color-yellow;
+	i {
+		color: $color-white;
+	}
+	p {
+		color: $color-white;
+	}
+	h6 {
+		color: $color-white;
+	}
+}
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+	@content;   
+   } 
+  }  
+  
+  @mixin tablet { @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {       
+	 @content;   
+   } 
+  }
+  @mixin lg { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+	@content;   
+  } 
+ }  
+  
+  @mixin desktop { @media (min-width: #{$desktop-width}) and (max-width: #{$xl-width - 1px}) {     
+	@content;  
+   } 
+  }
